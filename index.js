@@ -12,21 +12,22 @@ client.once('ready', () => {
   console.log(`Bot is online as ${client.user.tag}`);
 });
 
-client.on('messageCreate', message => {
+  client.on('messageCreate', message => {
 
-  // Ignore bots
   if (message.author.bot) return;
-
-  // Ignore DMs (only work in servers)
   if (!message.guild) return;
 
   const yourID = '1238835145415462963';
 
+  // Ignore replies
+  if (message.reference) return;
+
   if (message.mentions.users.has(yourID)) {
-    message.channel.send("Stop pinging my owner!");
+    message.channel.send("Hey 👀 Please don't ping him!");
   }
 
 });
 
 
 client.login(process.env.TOKEN);
+
