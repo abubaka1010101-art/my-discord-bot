@@ -28,4 +28,5 @@ client.on('messageCreate', message => {
 
 });
 
-client.login('client.login(process.env.TOKEN);');
+
+client.login(process.env.TOKEN);
