@@ -23,12 +23,23 @@ client.once('ready', () => {
   if (message.reference) return;
 
   if (message.mentions.users.has(yourID)) {
-    message.channel.send("Stop pinging my daddy");
-  }
+
+  const replies = [
+    "Wtf do u want?",
+    "My owner is busy rnn",
+    "Stop pinging my daddy",
+    "BOMBOCLATTTTT."
+  ];
+
+  const randomReply = replies[Math.floor(Math.random() * replies.length)];
+
+  message.channel.send(randomReply);
+}
 
 });
 
 
 client.login(process.env.TOKEN);
+
 
 
