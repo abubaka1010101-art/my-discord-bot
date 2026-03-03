@@ -23,11 +23,12 @@ client.once('ready', () => {
   if (message.reference) return;
 
   if (message.mentions.users.has(yourID)) {
-    message.channel.send("Hey 👀 Please don't ping him!");
+    message.channel.send("Stop pinging my daddy");
   }
 
 });
 
 
 client.login(process.env.TOKEN);
+
 
