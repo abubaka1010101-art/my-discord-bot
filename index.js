@@ -19,16 +19,23 @@ client.once('ready', () => {
 
   const yourID = '1238835145415462963';
 
-  // Ignore replies
-  if (message.reference) return;
+// Ignore replies
+if (message.reference) return;
 
-  if (message.mentions.users.has(yourID)) {
+if (message.mentions.users.has(yourID)) {
+
+  const specialUser = '1238835145415462963';
+
+  if (message.author.id === specialUser) {
+    message.channel.send("Yess daddy I'm here what do u want? UwU.");
+    return;
+  }
 
   const replies = [
     "Wtf do u want?",
-    "My owner is busy rnn",
+    "My owner is busy rn",
     "Stop pinging my daddy",
-    "BOMBOCLATTTTT."
+    "BOMBOCLATTTT."
   ];
 
   const randomReply = replies[Math.floor(Math.random() * replies.length)];
@@ -40,6 +47,7 @@ client.once('ready', () => {
 
 
 client.login(process.env.TOKEN);
+
 
 
 
