@@ -22,27 +22,23 @@ client.once('ready', () => {
 // Ignore replies
 if (message.reference) return;
 
-if (message.mentions.users.has(yourID)) {
-
-  const specialUser = '1238835145415462963';
-
-// Ignore replies
-if (message.reference) return;
 
 // ---------- IF YOU PING THE BOT ----------
 if (message.mentions.users.has(client.user.id)) {
 
   const ownerID = '1238835145415462963';
 
+  // Only respond if YOU ping the bot
   if (message.author.id === ownerID) {
     message.channel.send("Yess daddy I'm here what do u want? UwU.");
   }
 
+  return; // stop here so others don't trigger anything
 }
 
 
 // ---------- IF SOMEONE PINGS YOU ----------
-if (message.mentions.users.has(yourID)) {
+if (message.mentions.users.has('1238835145415462963')) {
 
   const replies = [
     "Wtf do u want?",
@@ -60,6 +56,7 @@ if (message.mentions.users.has(yourID)) {
 
 
 client.login(process.env.TOKEN);
+
 
 
 
