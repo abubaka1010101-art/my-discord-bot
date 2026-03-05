@@ -20,17 +20,24 @@ client.on('messageCreate', message => {
   // Ignore replies
   if (message.reference) return;
 
-  const ownerID = '1238835145415462963'; // your ID
-  const targetUser = '1337700492641439766'; // person to ping for "I miss u"
+  const ownerID = '1238835145415462963'; 
+  const targetUser = '1337700492641439766';
+
+  const content = message.content.toLowerCase();
 
   // ---------- THUG SHAKE GIF ----------
-  if (message.content.toLowerCase().includes("thug shake")) {
+  if (content.includes("thug shake")) {
     message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-16362657958830388259");
   }
 
+  // ---------- TRACY MESSAGE ----------
+  if (content.includes("tracy")) {
+    message.channel.send("she likes KFC 🍗");
+  }
+
   // ---------- IF YOU SAY "I miss u" ----------
-  if (message.author.id === ownerID && message.content.toLowerCase().includes("i miss u")) {
-    message.channel.send(`<@${targetUser}> my master misses you 😔`);
+  if (message.author.id === ownerID && content.includes("miss u")) {
+    message.channel.send(`<@${targetUser}> he misses you 😔`);
   }
 
   // ---------- IF YOU PING THE BOT ----------
@@ -40,7 +47,7 @@ client.on('messageCreate', message => {
       message.channel.send("Yess daddy I'm here what do u want? UwU.");
     }
 
-    return; // stop others from triggering
+    return;
   }
 
   // ---------- IF SOMEONE PINGS YOU ----------
@@ -61,6 +68,7 @@ client.on('messageCreate', message => {
 });
 
 client.login(process.env.TOKEN);
+
 
 
 
