@@ -12,50 +12,56 @@ client.once('ready', () => {
   console.log(`Bot is online as ${client.user.tag}`);
 });
 
-  client.on('messageCreate', message => {
+client.on('messageCreate', message => {
 
+  // Ignore bots
   if (message.author.bot) return;
-  if (!message.guild) return;
 
-  const yourID = '1238835145415462963';
+  // Ignore replies
+  if (message.reference) return;
 
-// Ignore replies
-if (message.reference) return;
+  const ownerID = '1238835145415462963'; // your ID
+  const targetUser = '1337700492641439766'; // person to ping for "I miss u"
 
-
-// ---------- IF YOU PING THE BOT ----------
-if (message.mentions.users.has(client.user.id)) {
-
-  const ownerID = '1238835145415462963';
-
-  // Only respond if YOU ping the bot
-  if (message.author.id === ownerID) {
-    message.channel.send("Yess daddy I'm here what do u want? UwU.");
+  // ---------- THUG SHAKE GIF ----------
+  if (message.content.toLowerCase().includes("thug shake")) {
+    message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-16362657958830388259");
   }
 
-  return; // stop here so others don't trigger anything
-}
+  // ---------- IF YOU SAY "I miss u" ----------
+  if (message.author.id === ownerID && message.content.toLowerCase().includes("i miss u")) {
+    message.channel.send(`<@${targetUser}> he misses you 😔`);
+  }
 
+  // ---------- IF YOU PING THE BOT ----------
+  if (message.mentions.users.has(client.user.id)) {
 
-// ---------- IF SOMEONE PINGS YOU ----------
-if (message.mentions.users.has('1238835145415462963')) {
+    if (message.author.id === ownerID) {
+      message.channel.send("Yess daddy I'm here what do u want? UwU.");
+    }
 
-  const replies = [
-    "Wtf do u want?",
-    "My owner is busy rn",
-    "Stop pinging my daddy",
-    "BOMBOCLATTTT."
-  ];
+    return; // stop others from triggering
+  }
 
-  const randomReply = replies[Math.floor(Math.random() * replies.length)];
+  // ---------- IF SOMEONE PINGS YOU ----------
+  if (message.mentions.users.has(ownerID)) {
 
-  message.channel.send(randomReply);
-}
+    const replies = [
+      "Wtf do u want?",
+      "My owner is busy rn",
+      "Stop pinging my daddy",
+      "BOMBOCLATTTT."
+    ];
+
+    const randomReply = replies[Math.floor(Math.random() * replies.length)];
+
+    message.channel.send(randomReply);
+  }
 
 });
 
-
 client.login(process.env.TOKEN);
+
 
 
 
