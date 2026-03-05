@@ -30,8 +30,7 @@ client.on('messageCreate', message => {
 
   // ---------- IF YOU SAY "I miss u" ----------
   if (message.author.id === ownerID && message.content.toLowerCase().includes("i miss u")) {
-message.channel.send(`<@${1337700492641439766}> he misses you 😔`);  }
-
+message.channel.send(`<@${targetUser}> he misses you 😔`);
   // ---------- IF YOU PING THE BOT ----------
   if (message.mentions.users.has(client.user.id)) {
 
@@ -60,6 +59,7 @@ message.channel.send(`<@${1337700492641439766}> he misses you 😔`);  }
 });
 
 client.login(process.env.TOKEN);
+
 
 
 
