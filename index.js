@@ -25,7 +25,7 @@ client.on('messageCreate', message => {
 
   // ---------- THUG SHAKE GIF ----------
   if (message.content.toLowerCase().includes("thug shake")) {
-    message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-1636265795883088259");
+    message.channel.send("https://media1.tenor.com/m/4xPWuHFNtCMAAAAC/brandon-brandon-curington.gif");
   }
 
   // ---------- IF YOU SAY "I miss u" ----------
@@ -61,6 +61,7 @@ client.on('messageCreate', message => {
 });
 
 client.login(process.env.TOKEN);
+
 
 
 
