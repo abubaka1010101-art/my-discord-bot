@@ -21,16 +21,18 @@ client.on('messageCreate', message => {
   if (message.reference) return;
 
   const ownerID = '1238835145415462963'; // your ID
-  const targetUser = '1337700492641439766'; // person to ping for "I miss u"
+  const targetUser = '1337700492641439766'; // person to ping
 
   // ---------- THUG SHAKE GIF ----------
   if (message.content.toLowerCase().includes("thug shake")) {
-    message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-16362657958830388259");
+    message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-1636265795883088259");
   }
 
   // ---------- IF YOU SAY "I miss u" ----------
-  if (message.author.id === ownerID && message.content.toLowerCase().includes("i miss u")) {
-message.channel.send(`<@${targetUser}> he misses you 😔`);
+  if (message.author.id === ownerID && message.content.toLowerCase().includes("miss u")) {
+    message.channel.send(`<@${targetUser}> he misses you 😔`);
+  }
+
   // ---------- IF YOU PING THE BOT ----------
   if (message.mentions.users.has(client.user.id)) {
 
@@ -59,6 +61,7 @@ message.channel.send(`<@${targetUser}> he misses you 😔`);
 });
 
 client.login(process.env.TOKEN);
+
 
 
 
