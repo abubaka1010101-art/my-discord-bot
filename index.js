@@ -25,17 +25,22 @@ client.on('messageCreate', message => {
 
   const content = message.content.toLowerCase();
 
-  // ---------- THUG SHAKE GIF ----------
+  // ---------- THUG SHAKE ----------
   if (content.includes("thug shake")) {
     message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-16362657958830388259");
   }
 
-  // ---------- IBTI GIF ----------
+  // ---------- JOE SHAKE ----------
+  if (content.includes("joe shake")) {
+    message.channel.send("https://tenor.com/view/joe-bart-skibidi-twerk-shake-butt-gyatt-gif-11152400358379255496");
+  }
+
+  // ---------- IBTI ----------
   if (content.includes("ibti")) {
     message.channel.send("https://tenor.com/view/cry-about-it-cry-about-it-meme-gif-20184012");
   }
 
-  // ---------- TRACY MESSAGE ----------
+  // ---------- TRACY ----------
   if (content.includes("tracy")) {
     message.channel.send("she likes KFC 🍗");
   }
@@ -73,6 +78,7 @@ client.on('messageCreate', message => {
 });
 
 client.login(process.env.TOKEN);
+
 
 
 
