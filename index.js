@@ -20,7 +20,7 @@ client.on('messageCreate', message => {
   // Ignore replies
   if (message.reference) return;
 
-  const ownerID = '1238835145415462963'; 
+  const ownerID = '1238835145415462963';
   const targetUser = '1337700492641439766';
 
   const content = message.content.toLowerCase();
@@ -28,6 +28,11 @@ client.on('messageCreate', message => {
   // ---------- THUG SHAKE GIF ----------
   if (content.includes("thug shake")) {
     message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-16362657958830388259");
+  }
+
+  // ---------- IBTI GIF ----------
+  if (content.includes("ibti")) {
+    message.channel.send("https://tenor.com/view/cry-about-it-cry-about-it-meme-gif-20184012");
   }
 
   // ---------- TRACY MESSAGE ----------
@@ -68,6 +73,7 @@ client.on('messageCreate', message => {
 });
 
 client.login(process.env.TOKEN);
+
 
 
 
