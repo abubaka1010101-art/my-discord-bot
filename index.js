@@ -40,6 +40,11 @@ client.on('messageCreate', message => {
     message.channel.send("https://tenor.com/view/cry-about-it-cry-about-it-meme-gif-20184012");
   }
 
+  // ---------- OHIO GOON ----------
+  if (content.includes("ohio goon")) {
+    message.channel.send("https://tenor.com/view/ishowspeed-ohio-ishowspeed-ohio-ohio-goon-gif-6107280315227509350");
+  }
+
   // ---------- TRACY ----------
   if (content.includes("tracy")) {
     message.channel.send("she likes KFC 🍗");
@@ -78,6 +83,7 @@ client.on('messageCreate', message => {
 });
 
 client.login(process.env.TOKEN);
+
 
 
 
