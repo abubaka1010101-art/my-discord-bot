@@ -36,8 +36,8 @@ client.on('messageCreate', message => {
   }
 
   // ---------- IBTI ----------
-  if (content.includes("ibti")) {
-    message.channel.send("https://tenor.com/view/cry-about-it-cry-about-it-meme-gif-20184012");
+  if (content.includes("throw dat lil salsa dance")) {
+    message.channel.send("https://tenor.com/view/dj-khaled-salsa-dance-gif-9031583");
   }
 
   // ---------- OHIO GOON ----------
