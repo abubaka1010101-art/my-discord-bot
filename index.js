@@ -48,6 +48,10 @@ client.on('messageCreate', message => {
   // ---------- TRACY ----------
   if (content.includes("tracy")) {
     message.channel.send("she likes KFC 🍗");
+
+    if (content.includes("do u want mommy?")) {
+    message.channel.send("FUH NAH DADDY ");
+      
   }
 
   // ---------- IF YOU SAY "I miss u" ----------
