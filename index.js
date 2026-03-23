@@ -50,9 +50,8 @@ client.on('messageCreate', message => {
     message.channel.send("she likes KFC 🍗");
 
     if (content.includes("do u want mommy?")) {
-    message.channel.send("FUH NAH DADDY ");
-      
-  }
+    message.channel.send("FUH NAH DADDY "); 
+   }
 
   // ---------- IF YOU SAY "I miss u" ----------
   if (message.author.id === ownerID && content.includes("miss u")) {
