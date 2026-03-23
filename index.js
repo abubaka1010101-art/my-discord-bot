@@ -49,7 +49,7 @@ client.on('messageCreate', message => {
   if (content.includes("tracy")) {
     message.channel.send("she likes KFC 🍗");
 
-  if (content.includes("do u want mommy?")) 
+  if (content.includes("do u want mommy?")) {
      message.channel.send("FUH NAH DADDY "); 
   }
 
