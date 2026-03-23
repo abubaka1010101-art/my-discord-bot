@@ -65,7 +65,7 @@ client.on('messageCreate', message => {
     message.author.id === ownerID &&
     content.includes("sigma sigma on the wall who's the toughest of them all")
   ) {
-    message.channel.send("Abu Bakar");
+    message.channel.send("Abu Bakar of course NOONE ELSE CNA BE TUFFER THAN U DADDY UwU");
   }
 
   // ---------- IF YOU PING THE BOT ----------
