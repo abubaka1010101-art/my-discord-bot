@@ -21,36 +21,33 @@ client.on('messageCreate', message => {
   if (message.reference) return;
 
   const ownerID = '1238835145415462963';
-  const targetUser = '';
+  const targetUser = '1337700492641439766';
 
   const content = message.content.toLowerCase();
 
   // ---------- THUG SHAKE ----------
   if (content.includes("thug shake")) {
-    message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-16362657958830388259");
+    message.channel.send("PUT_THUG_SHAKE_GIF_LINK");
   }
 
   // ---------- JOE SHAKE ----------
   if (content.includes("joe shake")) {
-    message.channel.send("https://tenor.com/view/joe-bart-skibidi-twerk-shake-butt-gyatt-gif-11152400358379255496");
+    message.channel.send("PUT_JOE_SHAKE_GIF_LINK");
   }
 
   // ---------- IBTI ----------
-  if (content.includes("throw dat lil salsa dance")) {
-    message.channel.send("https://tenor.com/view/dj-khaled-salsa-dance-gif-9031583");
+  if (content.includes("ibti")) {
+    message.channel.send("PUT_IBTI_GIF_LINK");
   }
 
   // ---------- OHIO GOON ----------
   if (content.includes("ohio goon")) {
-    message.channel.send("https://tenor.com/view/ishowspeed-ohio-ishowspeed-ohio-ohio-goon-gif-6107280315227509350");
+    message.channel.send("PUT_OHIO_GOON_GIF_LINK");
   }
 
   // ---------- TRACY ----------
   if (content.includes("tracy")) {
     message.channel.send("she likes KFC 🍗");
-
-  if (content.includes("do u want mommy?")) {
-     message.channel.send("FUH NAH DADDY "); 
   }
 
   // ---------- IF YOU SAY "I miss u" ----------
