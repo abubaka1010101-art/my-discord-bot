@@ -27,22 +27,22 @@ client.on('messageCreate', message => {
 
   // ---------- THUG SHAKE ----------
   if (content.includes("thug shake")) {
-    message.channel.send("PUT_THUG_SHAKE_GIF");
+    message.channel.send("https://tenor.com/view/brandon-brandon-curington-curington-gif-16362657958830388259");
   }
 
   // ---------- JOE SHAKE ----------
   if (content.includes("joe shake")) {
-    message.channel.send("PUT_JOE_SHAKE_GIF");
+    message.channel.send("https://tenor.com/view/joe-bart-skibidi-twerk-shake-butt-gyatt-gif-11152400358379255496");
   }
 
   // ---------- IBTI ----------
   if (content.includes("ibti")) {
-    message.channel.send("PUT_IBTI_GIF");
+    message.channel.send("https://tenor.com/view/cat-cat-blush-silly-cat-juice-cute-gif-6133838172443289075");
   }
 
   // ---------- OHIO GOON ----------
   if (content.includes("ohio goon")) {
-    message.channel.send("PUT_OHIO_GOON_GIF");
+    message.channel.send("https://tenor.com/view/ishowspeed-ohio-ishowspeed-ohio-ohio-goon-gif-6107280315227509350");
   }
 
   // ---------- SALSA DANCE ----------
