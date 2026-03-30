@@ -21,7 +21,7 @@ client.on('messageCreate', message => {
   if (message.reference) return;
 
   const ownerID = '1238835145415462963';
-  const targetUser = '';
+  const targetUser = '1340647212216225892';
 
   const content = message.content.toLowerCase();
 
