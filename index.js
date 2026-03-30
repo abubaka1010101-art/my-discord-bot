@@ -52,7 +52,7 @@ client.on('messageCreate', message => {
 
   // ---------- TRACY ----------
   if (content.includes("nilla")) {
-    message.channel.send("vanilla");
+    message.channel.send("fking vanilla");
   }
 
   // ---------- IF YOU SAY "I miss u" ----------
