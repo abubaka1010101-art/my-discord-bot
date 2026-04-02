@@ -63,8 +63,8 @@ client.on('messageCreate', message => {
   // ---------- SIGMA COMMAND ----------
   if (
     message.author.id === ownerID &&
-    content.includes("sigma sigma on the wall who's the TUFFEST of them all")
-  ) {
+    content.includes("sigma sigma on the wall who's the TUFFEST of them all")) 
+  {
     message.channel.send("Abu Bakar of course NOONE ELSE CAN BE TUFFER THAN U DADDY UwU");
   }
 
