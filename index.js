@@ -55,25 +55,33 @@ client.on('messageCreate', message => {
     message.channel.send("fking vanilla");
   }
 
-  // ---------- WHO IS IBTI ----------
-  if (content.includes("who is ibti?")) {
+ // ---------- WHO IS IBTI ----------
+if (content.includes("who is ibti")) {
 
-    message.channel.send(
-      "Ibti has this presence that feels effortlessly special, like she doesn’t even try to stand out but somehow always does. There’s a soft, almost calming energy about her, mixed with a quiet strength that makes her seem both gentle and powerful at the same time."
-    );
+  message.channel.send(
+    "Alright so to start with IBTI she is really tuff like HER AURA MAKES IT IMPOSSIBLE TO BEAT I gave up and she is majestic like one of the best."
+  );
 
-    message.channel.send(
-      "The way she carries herself feels natural and unforced, like everything about her just flows — her words, her expressions, even her silence. She has that kind of personality that can make someone feel comfortable without doing much, yet also leave a lasting impression."
-    );
+  message.channel.send(
+    "She's soo majestic that no one can even come around her and like IBTI is really kind she always helped me and she cares about everyone."
+  );
 
-    message.channel.send(
-      "There’s something genuine about her, something real that makes her different from everyone else. She isn’t loud, but she doesn’t need to be — her presence speaks for itself, and that’s what makes it rare."
-    );
+  message.channel.send(
+    "She is a really great friend and daughter, she is really hardworking and she takes good care of her friends and family."
+  );
 
-    message.channel.send(
-      "Ibti is the kind of person who brings a quiet charm and a subtle spark into any space she’s in. That mix of calmness, mystery, and authenticity is what makes her truly unforgettable."
-    );
-  }
+  message.channel.send(
+    "And she ALWAYS STANDS WITH WHAT IS RIGHT THAT IS JS SOOO GOATED she knows what is right and wrong."
+  );
+
+  message.channel.send(
+    "She is really smart, she knows what is good for her and what is not, her beliefs are really great, she is religious."
+  );
+
+  message.channel.send(
+    "SHE PRAYS she does everything that makes her GOATED."
+  );
+}
 
   // ---------- IF YOU SAY "I miss u" ----------
   if (message.author.id === ownerID && content.includes("miss u")) {
