@@ -21,7 +21,7 @@ client.on('messageCreate', message => {
   if (message.reference) return;
 
   const ownerID = '1238835145415462963';
-  const targetUser = '1340647212216225892';
+  const targetUser = '1337700492641439766';
 
   const content = message.content.toLowerCase();
 
@@ -32,10 +32,10 @@ client.on('messageCreate', message => {
 
   // ---------- JOE SHAKE ----------
   if (content.includes("joe shake")) {
-    message.channel.send("https://tenor.com/view/joe-bart-skibidi-twerk-shake-butt-gyatt-gif-11152400358379255496");
+    message.channel.send("https://tenor.com/view/thug-shake-thug-shaker-black-ass-shake-gif-25873456");
   }
 
-  // ---------- IBTI ----------
+  // ---------- IBTI GIF ----------
   if (content.includes("ibti")) {
     message.channel.send("https://tenor.com/view/cat-cat-blush-silly-cat-juice-cute-gif-6133838172443289075");
   }
@@ -55,6 +55,26 @@ client.on('messageCreate', message => {
     message.channel.send("fking vanilla");
   }
 
+  // ---------- WHO IS IBTI ----------
+  if (content.includes("who is ibti?")) {
+
+    message.channel.send(
+      "Ibti has this presence that feels effortlessly special, like she doesn’t even try to stand out but somehow always does. There’s a soft, almost calming energy about her, mixed with a quiet strength that makes her seem both gentle and powerful at the same time."
+    );
+
+    message.channel.send(
+      "The way she carries herself feels natural and unforced, like everything about her just flows — her words, her expressions, even her silence. She has that kind of personality that can make someone feel comfortable without doing much, yet also leave a lasting impression."
+    );
+
+    message.channel.send(
+      "There’s something genuine about her, something real that makes her different from everyone else. She isn’t loud, but she doesn’t need to be — her presence speaks for itself, and that’s what makes it rare."
+    );
+
+    message.channel.send(
+      "Ibti is the kind of person who brings a quiet charm and a subtle spark into any space she’s in. That mix of calmness, mystery, and authenticity is what makes her truly unforgettable."
+    );
+  }
+
   // ---------- IF YOU SAY "I miss u" ----------
   if (message.author.id === ownerID && content.includes("miss u")) {
     message.channel.send(`<@${targetUser}> he misses you 😔`);
@@ -63,9 +83,9 @@ client.on('messageCreate', message => {
   // ---------- SIGMA COMMAND ----------
   if (
     message.author.id === ownerID &&
-    content.includes("sigma sigma on the wall who's the TUFFEST of them all")) 
-  {
-    message.channel.send("Abu Bakar of course NOONE ELSE CAN BE TUFFER THAN U DADDY UwU");
+    content.includes("sigma sigma on the wall who's the toughest of them all")
+  ) {
+    message.channel.send("Abu Bakar");
   }
 
   // ---------- IF YOU PING THE BOT ----------
