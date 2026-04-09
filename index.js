@@ -51,8 +51,8 @@ client.on('messageCreate', message => {
   }
 
   // ---------- TRACY ----------
-  if (content.includes("nilla")) {
-    message.channel.send("fking vanilla");
+  if (content.includes("TRACY")) {
+    message.channel.send("CORNBALL NO RIZZ NOTHING HAHAHAHAHAHAH");
   }
 
  // ---------- WHO IS IBTI ----------
